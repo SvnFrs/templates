@@ -3,10 +3,10 @@ services:
     container_name: postgres_container
     image: postgres
     environment:
-      PGUSER: example
-      POSTGRES_USER: example
-      POSTGRES_PASSWORD: example
-      POSTGRES_DB: example
+      - PGUSER=example
+      - POSTGRES_USER=example
+      - POSTGRES_PASSWORD=example
+      - POSTGRES_DB=example
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
